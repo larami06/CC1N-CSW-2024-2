@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas e Tabelas</title>
+</head>
+
+<body>
+    <table border="1">
+        <h1>Tabelas</h1>
+        <tr>
+            <th> Produto </th>
+            <th> Preço </th>
+        </tr>
+        <tr>
+            <td>Camiseta</td>
+            <td>R$ 39,90</td>
+        </tr>
+        <tr>
+            <td>Calça Jeans</td>
+            <td>R$ 89,90</td>
+        </tr>
+        <tr>
+            <td>Tênis</td>
+            <td>R$ 129,90</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="2">
+        <h1>Tabela 2</h1>
+        <tr>
+            <th> Camiseta </th>
+            <th> Calça Jeans </th>
+            <th> Tênis</th>
+        </tr>
+        <tr>
+            <td>R$ 39,90</td>
+            <td>R$ 89,90</td>
+            <td>R$ 129,90</td>
+        </tr>
+    </table>
+    <hr>
+    <h3> Tabelas - Cabeçalho, Corpo e Rodapé</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th> Produto </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>R$ 129,90</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p> (Muda apenas visualmente no *codigo*)</p>
+    <hr>
+
+    <h1> Mesclagem de Linhas e Colunas</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2"> Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td>Disponível</td>
+                <td>Entrega em 24h</td>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>&nbsp;&nbsp;-</td>
+            </tr>
+            </tr>
+            </tbody>
+        <tfoot>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+                <td>Disponível</td>
+                <td>Entrega em 24h</td>
+            </tr>
+        </tfoot>
+    </table>
+
+<br>
+<br> 
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th colspan="2"> Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 39,90</td>
+                <td rowspan="2">Disponível</td>
+                <td rowspan="2">Entrega em 24h</td>
+            </tr>
+            <tr>
+                <td>Tênis</td>
+                <td>R$ 129,90</td>
+            </tr>
+            </tbody>
+        <tfoot>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>Indisponível</td>
+                <td>--</td>
+            </tr>
+            <tr> 
+                <td> Total</td>
+                <td colspan="3"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R$529,90 </td>
+          </tr>
+        </tfoot>
+    </table>
+<br>
+<hr>
+
+<h2> *** desafio ***</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th rowspan="2"> Funcionário </th>
+            <th rowspan="2"> Semestre </th>
+            <th colspan="2"> Gastos </th>
+            <th colspan="2"> Lucros </th>
+        </tr>
+        <tr>
+            <th> Líquido </th>
+            <th> Bruto </th>
+            <th> Líquido </th>
+            <th> Bruto </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2"> João</td>
+            <td> 1°</td>
+            <td> 1000</td>
+            <td> 1200</td>
+            <td> 200</td>
+            <td> 300</td>
+        </tr>
+        <tr>
+            <td> 2°</td>
+            <td> 1000</td>
+            <td> 1200</td>
+            <td> 200</td>
+            <td> 300</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td rowspan="2"> Maria </td>
+            <td> 1° </td>
+            <td> 1000</td>
+            <td> 1200</td>
+            <td> 200</td>
+            <td> 300</td>
+        </tr>
+        <tr>
+            <td> 2°</td>
+            <td> 1000</td>
+            <td> 1200</td>
+            <td> 200</td>
+            <td> 300</td>
+        </tr>
+    </tfoot>
+</table>
+<br> <br> <hr>
+
+<table border="1">
+    <tr>
+        <th colspan="2"> Brasil</th>
+    </tr>
+
+    <tr>
+        <th> Estado</th>
+        <th> Time</th>
+    </tr>
+
+    <tr> 
+        <td rowspan="5"> São Paulo</td>
+    </tr>
+    <tr>
+        <td> Corinthians</td>
+    </tr>
+    <tr>
+        <td> Palmeiras</td>
+    </tr>
+    <tr>
+        <td> São Paulo</td>
+    </tr>
+    <tr>
+        <td> Santos</td>
+    </tr>
+    <tr>
+    <td rowspan="5"> Rio de Janeiro</td>
+    </tr>
+
+    <tr>
+        <td> Botafogo</td>
+    </tr>
+    <td> Flamengo</td>
+    <tr>
+        <td> Fluminense</td>
+    </tr>
+    <tr>
+        <td> Vasco</td>
+    </tr>
+</table>
+<hr> <br>
+
+<table border="1">
+    <tr> 
+        <th>Produto</th>
+        <th colspan="4"> Análise de Preço</th>
+    </tr>
+
+    <tr>
+        <th rowspan="4"> Caixa JBL BUMP!</th>
+        <th rowspan="2"> Submarino</th>
+        <th>Boleto</th>
+        <th> R$300,00</th>
+    </tr>
+
+    <tr>
+        <th> Cartão</th>
+        <th> R$350,00 </th>
+    </tr>
+
+    <tr> 
+        <th rowspan="2"> Amazon</th>
+        <th>Boleto</th>
+        <th> R$310,00</th>
+    </tr>
+
+    <tr>
+        <th> Cartão</th>
+        <th> R$340,00 </th>
+    </tr>
+
+    <tr>
+        <th rowspan="4"> Apple Watch SE</th>
+        <th rowspan="2"> Submarino</th>
+        <th>Boleto</th>
+        <th> R$2300,00</th>
+    </tr>
+
+    <tr>
+        <th> Cartão</th>
+        <th> R$2500,00 </th>
+    </tr>
+
+    <tr> 
+        <th rowspan="2"> Amazon</th>
+        <th>Boleto</th>
+        <th> R$2350,00</th>
+    </tr>
+
+    <tr>
+        <th> Cartão</th>
+        <th> R$2350,00 </th>
+    </tr>
+    
+</table>
+
+
+</body>
+
+</html>
