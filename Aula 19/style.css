@@ -1,0 +1,61 @@
+
+#personalizado{
+    text-align: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.esquerda{
+    text-align: right;
+    color: green;
+
+}
+
+#vermelho{
+    color: brown;
+}
+
+#subtitulo{
+    color: green;
+}
+
+#titulo2{
+    color: green;
+}
+
+#esquerda{
+    text-align: left;
+}
+
+.aninhadocentro{
+    text-align: center;
+}
+
+#divsimples{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid black;
+    size: 3px;
+}
+
+.divtratada{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+
+}
+
+
+.divtratada2{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+
+}
+
