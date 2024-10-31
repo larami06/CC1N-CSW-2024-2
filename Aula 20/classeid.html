@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+
+            /*16px = 1em*/
+
+            font-weight: lighter;
+
+            font-style: italic;
+
+            text-decoration: wavy;
+
+
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font: 3em italic 'Times New Roman', Times, serif;
+
+        }
+
+        h1:hover{
+            background-color: yellow;
+            font-style:inherit;
+            border-bottom: 3px;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+
+        #TituloPrincipal {
+            font: 3em italic 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        .TituloSecundario {
+            font: 3em italic 'Times New Roman', Times, serif;
+            color: lightcoral;
+            text-align: right;
+            
+        }
+
+        .ColunaCentral {
+            text-align: center;
+            border: 1px solid black;
+            margin: auto;
+            margin-bottom: 5%;
+      
+        }
+
+        .ColunaDireita {
+            display: inline-block;
+            border: 1px solid black;
+            width: 35%;
+            height: 250px;
+            margin: auto;
+            margin-right: 5%;
+            margin-left: 10%;
+        }
+
+        .ColunaEsquerda {
+            display: inline-block;
+            border: 1px solid black;
+            width: 35%;
+            height: 250px;
+            margin: auto;
+        }
+
+        /*Daniel Brito*/
+    </style>
+</head>
+
+<body>
+
+    <div class="ColunaCentral">
+        <h1 id="TituloPrincipal"> Personalizado ID</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias, ea totam beatae unde eum eveniet
+            ducimus quam fuga soluta vel labore earum quidem modi, odit voluptatum fugit eaque accusamus?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis totam voluptas ipsum nemo nisi,
+            repudiandae deleniti sed, nobis dolor similique cum impedit recusandae ipsam, molestiae consequatur
+            distinctio? Omnis, totam veritatis!
+        </p>
+    </div>
+    <div>
+        <div class="ColunaDireita">
+            <h2 class="TituloSecundario">Capitulo 1</h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse omnis nesciunt ea ducimus repellat maiores,
+            distinctio asperiores amet mollitia aliquid? Dolores earum nostrum enim nam exercitationem eaque ratione sit
+            minima?
+        </div>
+
+        <div class="ColunaEsquerda">
+            <h2>Capitulo 2</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore deleniti fuga repudiandae quia? Rem
+            optio, cupiditate minima eveniet nihil error numquam nesciunt, natus deleniti vero fugiat tenetur!
+            Quibusdam, libero exercitationem.
+
+        </div>
+    </div>
+    <div>
+        <div class="ColunaDireita">
+
+            <h2>Capitulo 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore deleniti fuga repudiandae quia? Rem
+                optio,
+                cupiditate minima eveniet nihil error numquam nesciunt, natus deleniti vero fugiat tenetur! Quibusdam,
+                libero exercitationem.</p>
+
+        </div>
+        <div class="ColunaEsquerda">
+
+            <h2 class="TituloSecundario">Capitulo 4</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore deleniti fuga repudiandae quia? Rem
+                optio,
+                cupiditate minima eveniet nihil error numquam nesciunt, natus deleniti vero fugiat tenetur! Quibusdam,
+                libero exercitationem.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
